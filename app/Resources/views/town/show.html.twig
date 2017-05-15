@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Town</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ town.id }}</td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>{{ town.country }}</td>
+            </tr>
+            <tr>
+                <th>Town</th>
+                <td>{{ town.town }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('town_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}
